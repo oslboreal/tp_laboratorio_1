@@ -1,0 +1,27 @@
+OK
+- Terminar la funcion factorial.
+
+
+OK
+- Declarar las funciones en el header y desarrollarlas en el achivo .c
+
+
+OK
+- Validar el ingreso de números. (Para meter valores en los strings se usa la func strcpy() )
+ingreso un flotante. --> lo convierto en cadena de caracteres.
+recorro caracter por caracter convirtiendolos en numeros y chequeando que sean numeros, si no son numeros
+retorna un 0 de lo contrario un uno.els
+
+A la funcion input operator ver por que no puedo pasarle como argumento las variables globales del main.
+
+
+- Comentar según la guia de estilos.
+
+- Dividir por cero.
+
+
+
+
+
+
+

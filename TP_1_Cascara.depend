@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1472694093 source:c:\users\marcos vallejo\desktop\trabajo practico 1 - programación\tp_1_cascara\tp_1_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"funciones.h"
+	<windows.h>
+	<conio.h>
+
+1472694007 c:\users\marcos vallejo\desktop\trabajo practico 1 - programación\tp_1_cascara\tp_1_cascara\funciones.h
+
+1472694171 source:c:\users\marcos vallejo\desktop\trabajo practico 1 - programación\tp_1_cascara\tp_1_cascara\jmvfunc.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<strings.h>
+	"funciones.h"
+
