@@ -1,5 +1,14 @@
 CALCULADORA --------------------------------------
 
+NO
+- Terminar la opcion que realiza todas las operaciones.
+
+NO
+- Encapsular un poco más y Comentar según la guia de estilos.
+
+NO
+- Chequear el resultado del Factorial.
+
 OK.
 - Terminar la funcion factorial.
 
@@ -19,7 +28,7 @@ A la funcion input operator ver por que no puedo pasarle como argumento las vari
 OK
 - Dividir por cero.
 
-- Encapsular un poco más y Comentar según la guia de estilos.
+
 
 
 LIBRERIAS ----------------------------------
