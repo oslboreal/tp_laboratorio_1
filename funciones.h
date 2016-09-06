@@ -10,6 +10,7 @@ void mostrarAlerta(char mensaje[100],float primerValor, float segundoValor,int i
 int validateIsNum(char num[], int tipo);
 float factorialDeNum(int n);
 float inputOperator(char operandoValidar[50], float primerOperandoActual, float segundoOperandoActual);
+void allOperations(float primerValor, float segundoValor);
 int esPositivo(int x);
 
 #endif // FUNCIONES_H_INCLUDED

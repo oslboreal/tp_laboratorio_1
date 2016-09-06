@@ -4,6 +4,7 @@
 #include "funciones.h"
 #include <windows.h>
 #include <conio.h>
+#include <ctype.h>
 
 #define alertar 1
 #define noAlertar 0
@@ -20,14 +21,16 @@
     // Variables de estado.
     char seguir='s';
 
-    int caracter;
+    char caracter;
 
     // Operandos
     //char chequeoOperando[100];
     char opeChar[50];
+
     float primerOperando = 0;
     float segundoOperando = 0;
     float operacionRes = 0;
+
     char textoRes[50];
 
     // Variables de configuracion.
@@ -150,8 +153,14 @@ int main()
 
                         break;
             case 56: // Calcular todas las operaciones.
-
                         mensajeDefecto = 1;
+                        allOperations(primerOperando, segundoOperando);
+                        do
+                        {
+                            printf("Listado de operaciones impreso correctamente, desea continuar? S/N\n");
+                            seguir = tolower(getch());
+                        }while(seguir != 's' && seguir != 'n');
+
 
                         break;
             case 57:

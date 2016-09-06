@@ -37,7 +37,10 @@
 		<Unit filename="funciones.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="jmvFunc.c">
+		<Unit filename="jmv_Calculadora.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="jmv_Genericas.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="main.c">
