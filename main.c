@@ -138,7 +138,8 @@ int main()
             case 55: // Factorial del primer operando.
                         mensajeDefecto = 0;
 
-                        while(esPositivo(primerOperando)==0)
+                        // Validamos que el operando sea positivo.
+                        while(esPositivo(primerOperando)== 0)
                         {
 
                             mostrarAlerta("Es imposible realizar el fact() de un negativo.\nReingresa el primer operando...",primerOperando,segundoOperando,noAlertar,"No hay resultado para mostrar");
@@ -148,7 +149,7 @@ int main()
                         }
 
                         operacionRes = factorialDeNum(primerOperando);
-                        sprintf(textoRes,"%.3f",operacionRes);
+                        sprintf(textoRes,"%3.f",operacionRes);
                         mostrarAlerta("Operacion realizada correctamente.",primerOperando,segundoOperando,noAlertar,textoRes);
 
                         break;
@@ -157,7 +158,7 @@ int main()
                         allOperations(primerOperando, segundoOperando);
                         do
                         {
-                            printf("Listado de operaciones impreso correctamente, desea continuar? S/N\n");
+                            printf("Listado todas las operaciones, desea seguir operando? S/N\n");
                             seguir = tolower(getch());
                         }while(seguir != 's' && seguir != 'n');
 

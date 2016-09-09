@@ -113,10 +113,10 @@ float realizarMultiplicacion(float primerValor, float segundoValor)
     * \return El resultado de la operacion.
     */
 
-    float factorialDeNum(int n)
+    long factorialDeNum(int n)
             {
                 float acum = n;
-                int resultado;
+                long resultado;
 
                 int i;
                 if(n==0)
@@ -168,6 +168,8 @@ float realizarMultiplicacion(float primerValor, float segundoValor)
 
                             scanf("%s",operandoValidar);
                         }
+
+
                         operando = atof(operandoValidar);
                         return operando;
                 }
@@ -188,13 +190,37 @@ void allOperations(float primerValor, float segundoValor)
 
     // Primer operacion.
     valor = sumarOperandos(primerValor, segundoValor);
+    sprintf(resultado,"%.3f",valor);
+    printf("\nLa suma entre los operandos es %s\n",resultado);
+    fflush(stdin);
 
     valor = realizarMultiplicacion(primerValor, segundoValor);
+    sprintf(resultado,"%.3f",valor);
+    printf("\nLa multiplicacion entre los operandos es %s\n",resultado);
+    fflush(stdin);
 
+    if(segundoValor==0)
+    {
+        printf("\nError: Imposible realizar la division por cero.\n");
+
+    } else
+        {
     valor = realizarDivision(primerValor, segundoValor);
+    sprintf(resultado,"%.3f",valor);
+    printf("\nLa division entre los operandos es %s\n",resultado);
+    fflush(stdin);
+        }
+
 
     valor = restarOperandos(primerValor, segundoValor);
+    sprintf(resultado,"%.3f",valor);
+    printf("\nLa resta entre los operandos es %s\n",resultado);
+    fflush(stdin);
 
+    valor = factorialDeNum(primerValor);
+    sprintf(resultado,"%.3f",valor);
+    printf("\nEl factorial del primer operando es %s\n\n",resultado);
+    fflush(stdin);
 }
 
 

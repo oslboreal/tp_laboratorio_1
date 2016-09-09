@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1473387023 source:c:\users\marcos vallejo\desktop\programación en c\trabajo práctico i - calculadora\ficheros\jmv_calculadora.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<strings.h>
+	"funciones.h"
+
+1473387014 c:\users\marcos vallejo\desktop\programación en c\trabajo práctico i - calculadora\ficheros\funciones.h
+
+1473387400 source:c:\users\marcos vallejo\desktop\programación en c\trabajo práctico i - calculadora\ficheros\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"funciones.h"
+	<windows.h>
+	<conio.h>
+	<ctype.h>
+
+1473303575 source:c:\users\marcos vallejo\desktop\programación en c\trabajo práctico i - calculadora\ficheros\jmv_genericas.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<strings.h>
+	"funciones.h"
+

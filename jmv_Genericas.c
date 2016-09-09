@@ -24,6 +24,7 @@
                     int i;
                     int acumNum = 0;
                     int longitd = 0;
+                    int err;
 
                     if(tipo==1) // FLOAT
                     {
@@ -33,7 +34,7 @@
                         tipoElegido = 'I';
                     } else // En el caso de que el tipo sea incorrecto.
                         {
-                            return -1;
+                            err = -1;
                         }
 
                     longitd = strlen(num);
@@ -54,10 +55,10 @@
                      }
                         if(acumNum!=longitd)
                         {
-                            operacion = 0;
+                            err = 0;
                         } else
                         {
-                            operacion = 1;
+                            err = 1;
                         }
 
         }
@@ -76,16 +77,16 @@
                      }
                         if(acumNum!=longitd)
                         {
-                            operacion = 0;
+                            err = 0;
                         } else
                         {
-                            operacion = 1;
+                            err = 1;
                         }
         }
 
                         /* Retornado 1 todos los caracteres son numeros */
                         /* Retornado 0 no todos los caracteres son numeros. . */
-                        return operacion;
+                        return err;
 
 
        }
@@ -109,3 +110,45 @@
             return positivo;
 
         }
+
+/** \brief Intercambia dos enteros
+ *
+ * \param Primer entero a intercambiar.
+ * \param Segundo entero con el que se realizará el intercambio.
+ * \return Retornará: [1] Si se intercambió correctamente - [0] Si no se logró realizar el intercambio.
+ *
+ */
+
+ int swapInt(int *a, int *b)
+     {
+         int iniA = *a;
+         int iniB = *b;
+         int fin = 0;
+         int temporal;
+
+         temporal = *a;
+         *a = *b;
+         *b = temporal;
+
+         if(iniA!=*a&&iniB!=*b)
+         {
+             fin = 1;
+         }
+
+         return fin;
+     }
+
+/** \brief Intercambia el valor entre dos variables del tipo flotante.
+ *
+ * \param Dirección de memoria de la primera variable a intercambiar.
+ * \param Dirección de memoria de la segunda variable a intercambiar.
+ * \return [1] Si se realizó correctamente el intercambio. - [0] Si no se pudo realizar el intercambio.
+ *
+ */
+
+ int swapFloat(float *a, float *b)
+    {
+
+
+    }
+
