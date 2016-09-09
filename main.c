@@ -6,8 +6,8 @@
 #include <conio.h>
 #include <ctype.h>
 
-#define alertar 1
-#define noAlertar 0
+#define ALERTAR 1
+#define NOALERTAR 0
 
 
 /* ---------------------------------------------------------  /
@@ -20,18 +20,13 @@
 // --------------------------------------------------------- */
     // Variables de estado.
     char seguir='s';
-
     char caracter;
+    char opeChar[50]; // Misc.
 
-    // Operandos
-    //char chequeoOperando[100];
-    char opeChar[50];
-
-    float primerOperando = 0;
-    float segundoOperando = 0;
-    float operacionRes = 0;
-
-    char textoRes[50];
+    float primerOperando = 0; // Primer operando para operar.
+    float segundoOperando = 0; // Segundo operando para operar.
+    float operacionRes = 0; // Resultado de configuracion..
+    char textoRes[50]; // Texto del resultado..
 
     // Variables de configuracion.
     char textoPorDefecto[100] = "Bienvenido, selecciona una opcion para comenzar.";
@@ -42,8 +37,6 @@
 
 int main()
 {
-
-
     //Configuracion de la interface.
     system(estiloPorDefecto);
     SetConsoleTitle(tituloDelPrograma);
@@ -74,21 +67,17 @@ int main()
 
                         mensajeDefecto = 0; // Determina si se muestra el mensaje por defecto o no.
                         system("cls");
-                        mostrarAlerta("Por favor selecciona una opcion valida.",primerOperando,segundoOperando,alertar,textoNoRes);
-
+                        mostrarAlerta("Por favor selecciona una opcion valida.",primerOperando,segundoOperando,ALERTAR,textoNoRes);
                 break;
             case 49: /* Al presionar el uno */
                         mensajeDefecto = 1;
-
-                        mostrarAlerta("Por favor ingresa el dato correspondiente al operando.",primerOperando,segundoOperando,noAlertar,textoNoRes);
+                        mostrarAlerta("Por favor ingresa el dato correspondiente al operando.",primerOperando,segundoOperando,NOALERTAR,textoNoRes);
                         primerOperando = inputOperator(opeChar,primerOperando,segundoOperando);
-
                         break;
-
             case 50: // Segundo operando.
                         mensajeDefecto = 1;
 
-                        mostrarAlerta("Por favor ingresa el dato correspondiente al operando.",primerOperando,segundoOperando,noAlertar,textoNoRes);
+                        mostrarAlerta("Por favor ingresa el dato correspondiente al operando.",primerOperando,segundoOperando,NOALERTAR,textoNoRes);
                         segundoOperando = inputOperator(opeChar,primerOperando,segundoOperando);
 
                         break;
@@ -96,22 +85,20 @@ int main()
                         mensajeDefecto = 0;
                         operacionRes = sumarOperandos(primerOperando, segundoOperando);
                         sprintf(textoRes, "%.3f",operacionRes);
-
-                        mostrarAlerta("Operacion realizada correctamente.",primerOperando,segundoOperando,noAlertar,textoRes);
+                        mostrarAlerta("Operacion realizada correctamente.",primerOperando,segundoOperando,NOALERTAR,textoRes);
                         break;
             case 52: // Resta de operandos
                         mensajeDefecto = 0;
                         operacionRes = restarOperandos(primerOperando, segundoOperando);
                         sprintf(textoRes, "%.3f",operacionRes);
-
-                        mostrarAlerta("Operacion realizada correctamente.",primerOperando,segundoOperando,noAlertar,textoRes);
+                        mostrarAlerta("Operacion realizada correctamente.",primerOperando,segundoOperando,NOALERTAR,textoRes);
                         break;
             case 53: // Division entre dos operandos.
                         mensajeDefecto = 0;
                          while(segundoOperando==0)
                         {
 
-                            mostrarAlerta("Es imposible realizar una division con divisor 0.\nReingresa el segundo operando...",primerOperando,segundoOperando,noAlertar,"No hay resultado para mostrar");
+                            mostrarAlerta("Es imposible realizar una division con divisor 0.\nReingresa el segundo operando...",primerOperando,segundoOperando,NOALERTAR,"No hay resultado para mostrar");
                             printf("ERROR: Nada de caracteres raros, solo numeros, a lo sumo comas.\n"
                                    "ERROR: Ingresa nuevamente tu numero, esta vez distinto a cero: ");
                             segundoOperando = inputOperator(opeChar,primerOperando,segundoOperando);
@@ -121,28 +108,24 @@ int main()
                         operacionRes = realizarDivision(primerOperando,segundoOperando);
                         sprintf(textoRes,"%.3f",operacionRes);
 
-                        mostrarAlerta("Operacion realizada correctamente.",primerOperando,segundoOperando,noAlertar,textoRes);
+                        mostrarAlerta("Operacion realizada correctamente.",primerOperando,segundoOperando,NOALERTAR,textoRes);
 
 
 
                         break;
             case 54: // Multiplicacion entre dos operandos
                         mensajeDefecto = 0;
-
-
                         operacionRes = realizarMultiplicacion(primerOperando,segundoOperando);
                         sprintf(textoRes,"%.3f",operacionRes);
-
-                        mostrarAlerta("Operacion realizada correctamente.",primerOperando,segundoOperando,noAlertar,textoRes);
+                        mostrarAlerta("Operacion realizada correctamente.",primerOperando,segundoOperando,NOALERTAR,textoRes);
                         break;
             case 55: // Factorial del primer operando.
                         mensajeDefecto = 0;
-
                         // Validamos que el operando sea positivo.
                         while(esPositivo(primerOperando)== 0)
                         {
 
-                            mostrarAlerta("Es imposible realizar el fact() de un negativo.\nReingresa el primer operando...",primerOperando,segundoOperando,noAlertar,"No hay resultado para mostrar");
+                            mostrarAlerta("Es imposible realizar el fact() de un negativo.\nReingresa el primer operando...",primerOperando,segundoOperando,NOALERTAR,"No hay resultado para mostrar");
                             printf("ERROR: Nada de caracteres raros, solo numeros, a lo sumo comas.\n"
                                    "ERROR: Ingresa nuevamente tu numero, esta vez positivo: ");
                             primerOperando = inputOperator(opeChar,primerOperando,segundoOperando);
@@ -150,36 +133,32 @@ int main()
 
                         operacionRes = factorialDeNum(primerOperando);
                         sprintf(textoRes,"%3.f",operacionRes);
-                        mostrarAlerta("Operacion realizada correctamente.",primerOperando,segundoOperando,noAlertar,textoRes);
-
+                        mostrarAlerta("Operacion realizada correctamente.",primerOperando,segundoOperando,NOALERTAR,textoRes);
                         break;
             case 56: // Calcular todas las operaciones.
-                        mensajeDefecto = 1;
+                        mensajeDefecto = 0;
+                        mostrarAlerta("Operacion realizada correctamente.",primerOperando,segundoOperando,NOALERTAR,"El informe se genero exitosamente.");
                         allOperations(primerOperando, segundoOperando);
                         do
                         {
-                            printf("Listado todas las operaciones, desea seguir operando? S/N\n");
+                            printf("Luego de realizar este informe te gustaria seguir operando? S/N\n");
                             seguir = tolower(getch());
+                            if(seguir=='n')
+                            {
+                                printf("Muchas gracias por USAR la calculadora.\nUTN - Universidad Nacional Tecnologica.");
+                            }
                         }while(seguir != 's' && seguir != 'n');
-
-
                         break;
             case 57:
-
                         seguir='n';
-
                         break;
 
             default:
                         mensajeDefecto = 0;
-
-                        mostrarAlerta("Por favor selecciona una opcion valida.",primerOperando,segundoOperando,alertar,textoNoRes);
+                        mostrarAlerta("Por favor selecciona una opcion valida.",primerOperando,segundoOperando,ALERTAR,textoNoRes);
                         break;
-
         }
-
     }
-
     return 0;
 }
 
