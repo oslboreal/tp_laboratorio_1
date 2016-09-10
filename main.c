@@ -18,7 +18,10 @@
 // Prof. Scarafilo German & Lic. Mauricio Dávila.
 //
 // --------------------------------------------------------- */
-    // Variables de estado.
+
+int main()
+{
+        // Variables de estado.
     char seguir='s';
     char caracter;
     char opeChar[50]; // Misc.
@@ -36,8 +39,6 @@
     char textoNoRes[50] = "No hay resultado que mostrar.";
     char tituloDelPrograma[80] = "Calculador v0.4 - Universidad Tecnologica Nacional.";
 
-int main()
-{
     //Configuracion de la interface.
     system(estiloPorDefecto);
     SetConsoleTitle(tituloDelPrograma);
