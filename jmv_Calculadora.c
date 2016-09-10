@@ -115,8 +115,8 @@ float realizarMultiplicacion(float primerValor, float segundoValor)
 
     long factorialDeNum(int n)
             {
-                float acum = n;
-                long resultado;
+                long int acum = n;
+                long int resultado;
 
                 int i;
                 if(n==0)

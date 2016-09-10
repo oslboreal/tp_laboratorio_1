@@ -22,6 +22,7 @@
     char seguir='s';
     char caracter;
     char opeChar[50]; // Misc.
+    long int factorial;
 
     float primerOperando = 0; // Primer operando para operar.
     float segundoOperando = 0; // Segundo operando para operar.
@@ -131,8 +132,8 @@ int main()
                             primerOperando = inputOperator(opeChar,primerOperando,segundoOperando);
                         }
 
-                        operacionRes = factorialDeNum(primerOperando);
-                        sprintf(textoRes,"%3.f",operacionRes);
+                        factorial = factorialDeNum(primerOperando);
+                        sprintf(textoRes,"%li",factorial);
                         mostrarAlerta("Operacion realizada correctamente.",primerOperando,segundoOperando,NOALERTAR,textoRes);
                         break;
             case 56: // Calcular todas las operaciones.
