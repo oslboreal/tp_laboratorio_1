@@ -19,8 +19,7 @@
  */
         int validateIsNum(char num[100], int tipo)
         {
-                    char tipoElegido;
-                    int operacion;
+                    char tipoElegido = ' ';
                     int i;
                     int acumNum = 0;
                     int longitd = 0;
@@ -137,18 +136,4 @@
 
          return fin;
      }
-
-/** \brief Intercambia el valor entre dos variables del tipo flotante.
- *
- * \param Dirección de memoria de la primera variable a intercambiar.
- * \param Dirección de memoria de la segunda variable a intercambiar.
- * \return [1] Si se realizó correctamente el intercambio. - [0] Si no se pudo realizar el intercambio.
- *
- */
-
- int swapFloat(float *a, float *b)
-    {
-
-
-    }
 

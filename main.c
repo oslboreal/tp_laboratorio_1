@@ -148,6 +148,8 @@ int main()
                                 printf("Muchas gracias por USAR la calculadora.\nUTN - Universidad Nacional Tecnologica.");
                             }
                         }while(seguir != 's' && seguir != 'n');
+                        system("cls");
+                        mensajeDefecto = 1;
                         break;
             case 57:
                         seguir='n';
