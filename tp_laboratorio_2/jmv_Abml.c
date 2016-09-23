@@ -71,7 +71,7 @@ while(flag==1)
 printf("       ----PUNTO DE CARGA DE PERSONAS ----\n");
 printf("         [ID %d] - Cargando actualmente....\n\n", pos+1);
 
-    printf("[1/3]Ingrese el nombre de la persona a cargar: [MINIMO 4 CARACTERES] [MAX 49] ");
+    printf("[1/3]Ingrese el nombre de la persona a cargar: \n[MINIMO 4 CARACTERES] [MAX 49] ");
     fflush(stdin);
     gets(bufferN); // Recibo el nombre
 
@@ -123,7 +123,7 @@ while(flag==1)
 printf("       ----PUNTO DE CARGA DE PERSONAS ----\n");
 printf("         [ID %d] - Cargando actualmente....\n\n", pos+1);
 
-    printf("[2/3]Ingrese la edad de la persona a cargar: [DISTINTO A CERO] [MENOR A 120 ANIOS]");
+    printf("[2/3]Ingrese la edad de la persona a cargar: \n[DISTINTO A CERO] [MENOR A 120 ANIOS] ");
     fflush(stdin);
     gets(bufferE); // Recibo la edad
 
@@ -173,7 +173,7 @@ while(flag==1)
 printf("       ----PUNTO DE CARGA DE PERSONAS ----\n");
 printf("         [ID %d] - Cargando actualmente....\n\n", pos+1);
 
-    printf("[3/3]Ingrese el DNI de la persona a cargar: [7 DIGITOS MIN] [9 MAX] ");
+    printf("[3/3]Ingrese el DNI de la persona a cargar: \n[7 DIGITOS MIN] [9 MAX] ");
     fflush(stdin);
     gets(bufferD); // Recibo el DNI
 
@@ -222,16 +222,16 @@ if(estD == 1 && estE == 1 && estN == 1)
      system("cls");
 printf("       ----PUNTO DE CARGA DE PERSONAS ----\n");
 printf("         [ID %d] - Cargando actualmente....\n\n", pos+1);
-    printf("Todos los campos fueron rellenados correctamente.\n\n Se dio de alta al usuario %s de %s anios de edad con DNI: %s.\n", bufferN, bufferE, bufferD);
+    printf("Todos los campos fueron rellenados correctamente.\n\n Se dio de alta al usuario %s EDAD: %s - DNI: %s.\n", bufferN, bufferE, bufferD);
 
          // Asignación de estados por el usuario.
 
 
          strcpy(p[pos].nombre, bufferN);
 
-         for(i=0;i<50;i++)
-         {
-
+         for(i=0;i<50;i++)  // Esto es una normalización de los nombres.
+         {                  // Todos van a iniciar con Mayuscula y poseer mayusculas despues de cada espacio.
+                            // Ej: Si ingresas CaRlOs PrAdO se verà "Carlos Prado".
              if(i==0)
              {
                  p[pos].nombre[i] = toupper(p[pos].nombre[i]);
@@ -250,13 +250,13 @@ printf("         [ID %d] - Cargando actualmente....\n\n", pos+1);
 
 
 
-         p[pos].edad = atoi(bufferE);
-         p[pos].dni = atoi(bufferD);
+         p[pos].edad = atoi(bufferE); // Asigno la edad.
+         p[pos].dni = atoi(bufferD); // Asigno el DNI.
 
          // Asignacion de estados automáticos.
-         p[pos].idEstado = 'a';
-         p[pos].idGrupo = asignarGrupo(p[pos].edad);
-         p[pos].id = pos+1;
+         p[pos].idEstado = 'a'; // Estado activo.
+         p[pos].idGrupo = asignarGrupo(p[pos].edad); // Asigno el ID de grupo que retorna la Funcion AsignarGrupo .
+         p[pos].id = pos+1; // ID Auto Incremental (Primary Key).
 
 } else
     {
@@ -387,10 +387,10 @@ int cant = 0;
 
 return cant; // Retorno la cantidad de elementos encontrados.
 }
-/** \brief Imprime una lista de usuarios con un estado determinado.
+/** \brief Imprime un usuario.
 * \param Dirección de memoria del array de estructuras.
 * \param Tamapo del array a recorrer.
-* \return Cantidad de registros con estado de alta encontrados.
+* \return ID Del usuario a imprimir.
 *
 */
 void printOnePerson(struct datosPersonas *p, int tama, int id)
@@ -435,8 +435,10 @@ int regCantOff(struct datosPersonas *p, int tam)
         return ret; // Retorna la cantidad.
     }
 
-/** \brief
-* \param
+/** \brief Borra una persona de nuestra estructura indicando el ID
+* \param Array de estructura a trabajar.
+* \param Id de la persona a borrar.
+* \param Tamaño del arreglo a trabajar.
 * \return
 *
 */
