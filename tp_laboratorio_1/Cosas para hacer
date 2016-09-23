@@ -1,0 +1,53 @@
+CALCULADORA --------------------------------------
+
+NO
+- Terminar la opcion que realiza todas las operaciones.
+
+NO
+- Encapsular un poco más y Comentar según la guia de estilos.
+
+NO
+- Chequear el resultado del Factorial.
+
+OK.
+- Terminar la funcion factorial.
+
+OK.
+- Declarar las funciones en el header y desarrollarlas en el achivo .c
+
+OK.
+- Validar el ingreso de números. (Para meter valores en los strings se usa la func strcpy() )
+ingreso un flotante. --> lo convierto en cadena de caracteres.
+recorro caracter por caracter convirtiendolos en numeros y chequeando que sean numeros, si no son numeros
+retorna un 0 de lo contrario un uno.els
+
+OK.
+A la funcion input operator ver por que no puedo pasarle como argumento las variables globales del main.
+
+
+OK
+- Dividir por cero.
+
+
+
+
+LIBRERIAS ----------------------------------
+
+- Agregar a mis librerias personales:
+1. Ordenamiento de vectores (Funcion que setea si es numerico o alfabetico con [1] o [0])
+char ordenarVector(char texto[],int tipo)
+
+2. Actualizar las funciones actuales y hacer que los parametros se pasen por REFERENCIA.
+
+PERSONAL -----------------------------------
+
+- Leer punteros.
+
+- Adelantar las guias en el tren.
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+# depslib dependency file v1.0
+1472859847 source:c:\users\marcos vallejo\desktop\trabajo practico 1 - programación\tp_1_cascara\tp_1_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"funciones.h"
+	<windows.h>
+	<conio.h>
+	<ctype.h>
+
+1472859235 c:\users\marcos vallejo\desktop\trabajo practico 1 - programación\tp_1_cascara\tp_1_cascara\funciones.h
+
+1472859667 source:c:\users\marcos vallejo\desktop\trabajo practico 1 - programación\tp_1_cascara\tp_1_cascara\jmvfunc.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<strings.h>
+	"funciones.h"
+
+1472864595 source:c:\users\marcos vallejo\desktop\trabajo practico 1 - programación\tp_1_cascara\tp_1_cascara\jmv_genericas.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<strings.h>
+	"funciones.h"
+
+1472865071 source:c:\users\marcos vallejo\desktop\trabajo practico 1 - programación\tp_1_cascara\tp_1_cascara\jmv_calculadora.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<strings.h>
+	"funciones.h"
+
+1473464662 source:c:\users\marcos vallejo\desktop\nueva carpeta\jmv_calculadora.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<strings.h>
+	"funciones.h"
+
+1473464662 c:\users\marcos vallejo\desktop\nueva carpeta\funciones.h
+
+1473464662 source:c:\users\marcos vallejo\desktop\nueva carpeta\jmv_genericas.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<strings.h>
+	"funciones.h"
+
+1473464663 source:c:\users\marcos vallejo\desktop\nueva carpeta\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"funciones.h"
+	<windows.h>
+	<conio.h>
+	<ctype.h>
+
