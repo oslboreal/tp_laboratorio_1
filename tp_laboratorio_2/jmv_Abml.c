@@ -6,8 +6,8 @@
 #include <ctype.h>
 #include "funciones.h"
 
-/** \brief Indica cual es el primer registro vacio (Siendo vacÌo 0 por convencion).
-* \param DirecciÛn de memoria del arreglo de estructura.
+/** \brief Indica cual es el primer registro vacio (Siendo vac√≠o 0 por convencion).
+* \param Direcci√≥n de memoria del arreglo de estructura.
 * \return Ubicacion del registro vacio.
 *
 */
@@ -24,7 +24,7 @@ int regOff(struct datosPersonas *p, int tam)
                 ubi = i;           // Si encuentro una coincidencia retorno la direccion del array.
                 break;
 
-            } else // De lo contrario el valor a retornar ser· -1.
+            } else // De lo contrario el valor a retornar ser√° -1.
                 {
                     ubi = -1;
                 }
@@ -36,7 +36,7 @@ return ubi;
     }
 
 /** \brief Formulario de carga en el primer registro vacio.
-* \param DirecciÛn de memoria del arreglo de estructura.
+* \param Direcci√≥n de memoria del arreglo de estructura.
 *
 *
 */
@@ -49,7 +49,7 @@ void loadPerson(struct datosPersonas *p, int tama)
     char bande;
     int i;
 
-    // Utilizo 3 buffers en Vez de uno solo para realizar la asignaciÛn al FINAL una vez chequeados los estados.
+    // Utilizo 3 buffers en Vez de uno solo para realizar la asignaci√≥n al FINAL una vez chequeados los estados.
     char bufferN[4000]; // Buffer nombres
     char bufferE[4000]; // Buffer edad
     char bufferD[4000]; // Buffer DNI
@@ -71,7 +71,7 @@ while(flag==1)
 printf("       ----PUNTO DE CARGA DE PERSONAS ----\n");
 printf("         [ID %d] - Cargando actualmente....\n\n", pos+1);
 
-    printf("[1/3]Ingrese el nombre de la persona a cargar: \n[MINIMO 4 CARACTERES] [MAX 49] ");
+    printf("[1/3]Ingrese el nombre de la persona a cargar: \n[MINIMO 4 CARACTERES] [MAX 49] \n");
     fflush(stdin);
     gets(bufferN); // Recibo el nombre
 
@@ -88,9 +88,9 @@ printf("         [ID %d] - Cargando actualmente....\n\n", pos+1);
         estN = 1; // Si las dos validaciones son positivas el estado de validacion es 1.
     }
 
-    if(estN==1) // En funcion de la validaciÛn...
+    if(estN==1) // En funcion de la validaci√≥n...
     {
-        break; // El estado queda registrado para asignar al final, asÌ que simplemente salgo del primer while.
+        break; // El estado queda registrado para asignar al final, as√≠ que simplemente salgo del primer while.
     } else
         {
             do
@@ -123,7 +123,7 @@ while(flag==1)
 printf("       ----PUNTO DE CARGA DE PERSONAS ----\n");
 printf("         [ID %d] - Cargando actualmente....\n\n", pos+1);
 
-    printf("[2/3]Ingrese la edad de la persona a cargar: \n[DISTINTO A CERO] [MENOR A 120 ANIOS] ");
+    printf("[2/3]Ingrese la edad de la persona a cargar: \n[DISTINTO A CERO] [MENOR A 120 ANIOS] \n");
     fflush(stdin);
     gets(bufferE); // Recibo la edad
 
@@ -132,15 +132,15 @@ printf("         [ID %d] - Cargando actualmente....\n\n", pos+1);
 
     if(estAuxA==1 && estAuxB==1)
     {
-        if(validateIsNotZero(atoi(bufferE)) && atoi(bufferE) <= 120) // Valido que sea distinto de cero y menor de 120 aÒos (Excepcion para el usuario de Mirtha Legrand)..
+        if(validateIsNotZero(atoi(bufferE)) && atoi(bufferE) <= 120) // Valido que sea distinto de cero y menor de 120 a√±os (Excepcion para el usuario de Mirtha Legrand)..
         {
             estE = 1; // Si las dos validaciones son positivas el estado de validacion es 1.
         }
     }
 
-    if(estE==1) // En funcion de la validaciÛn...
+    if(estE==1) // En funcion de la validaci√≥n...
     {
-        break; // El estado queda registrado para asignar al final, asÌ que simplemente salgo del segundo while.
+        break; // El estado queda registrado para asignar al final, as√≠ que simplemente salgo del segundo while.
     } else
         {
             do
@@ -173,7 +173,7 @@ while(flag==1)
 printf("       ----PUNTO DE CARGA DE PERSONAS ----\n");
 printf("         [ID %d] - Cargando actualmente....\n\n", pos+1);
 
-    printf("[3/3]Ingrese el DNI de la persona a cargar: \n[7 DIGITOS MIN] [9 MAX] ");
+    printf("[3/3]Ingrese el DNI de la persona a cargar: \n[7 DIGITOS MIN] [9 MAX] \n");
     fflush(stdin);
     gets(bufferD); // Recibo el DNI
 
@@ -189,9 +189,9 @@ printf("         [ID %d] - Cargando actualmente....\n\n", pos+1);
     }
 
 
-    if(estD==1) // En funcion de la validaciÛn...
+    if(estD==1) // En funcion de la validaci√≥n...
     {
-        break; // El estado queda registrado para asignar al final, asÌ que simplemente salgo del primer while.
+        break; // El estado queda registrado para asignar al final, as√≠ que simplemente salgo del primer while.
     } else
         {
             do
@@ -224,14 +224,14 @@ printf("       ----PUNTO DE CARGA DE PERSONAS ----\n");
 printf("         [ID %d] - Cargando actualmente....\n\n", pos+1);
     printf("Todos los campos fueron rellenados correctamente.\n\n Se dio de alta al usuario %s EDAD: %s - DNI: %s.\n", bufferN, bufferE, bufferD);
 
-         // AsignaciÛn de estados por el usuario.
+         // Asignaci√≥n de estados por el usuario.
 
 
          strcpy(p[pos].nombre, bufferN);
 
-         for(i=0;i<50;i++)  // Esto es una normalizaciÛn de los nombres.
+         for(i=0;i<50;i++)  // Esto es una normalizaci√≥n de los nombres.
          {                  // Todos van a iniciar con Mayuscula y poseer mayusculas despues de cada espacio.
-                            // Ej: Si ingresas CaRlOs PrAdO se ver‡ "Carlos Prado".
+                            // Ej: Si ingresas CaRlOs PrAdO se ver√† "Carlos Prado".
              if(i==0)
              {
                  p[pos].nombre[i] = toupper(p[pos].nombre[i]);
@@ -253,7 +253,7 @@ printf("         [ID %d] - Cargando actualmente....\n\n", pos+1);
          p[pos].edad = atoi(bufferE); // Asigno la edad.
          p[pos].dni = atoi(bufferD); // Asigno el DNI.
 
-         // Asignacion de estados autom·ticos.
+         // Asignacion de estados autom√°ticos.
          p[pos].idEstado = 'a'; // Estado activo.
          p[pos].idGrupo = asignarGrupo(p[pos].edad); // Asigno el ID de grupo que retorna la Funcion AsignarGrupo .
          p[pos].id = pos+1; // ID Auto Incremental (Primary Key).
@@ -306,7 +306,7 @@ printf("         [ID %d] - Cargando actualmente....\n\n", pos+1);
     }
 
 /** \brief Imprime la descripcion del grupo segun su id.
-* \param DirecciÛn de memoria del array de estructura.
+* \param Direcci√≥n de memoria del array de estructura.
 * \param group Numero de identificacion del grupo.
 *
 */
@@ -327,7 +327,7 @@ void printGroup(int group)
 }
 
 /** \brief Inicializa todas las personas con mi codigo de baja.
-* \param DirecciÛn de memoria del array de estructura.
+* \param Direcci√≥n de memoria del array de estructura.
 * \return La cantidad de registros que fueron inicializados..
 *
 */
@@ -357,7 +357,7 @@ int inicializarRegistros(struct datosPersonas *p)
 }
 
 /** \brief Imprime una lista de usuarios con un estado determinado.
-* \param DirecciÛn de memoria del array de estructuras.
+* \param Direcci√≥n de memoria del array de estructuras.
 * \param Tamapo del array a recorrer.
 * \return Cantidad de registros con estado de alta encontrados.
 *
@@ -375,10 +375,10 @@ int cant = 0;
     printf("[ID:%d] DNI: %d\n", p[i].id,p[i].dni);
     printGroup(p[i].idGrupo);
     printf("\n");
-    cant++; // Si encontrÈ algo incremento la cantidad de registros encontrados.
+    cant++; // Si encontr√© algo incremento la cantidad de registros encontrados.
     }
 }
-    if(cant==0) // Si no detectÛ ningun tipo de ALTA.
+    if(cant==0) // Si no detect√≥ ningun tipo de ALTA.
     {
         printf("\nERROR: Por favor al menos de ALTA a una Persona.\n");
     }
@@ -388,7 +388,7 @@ int cant = 0;
 return cant; // Retorno la cantidad de elementos encontrados.
 }
 /** \brief Imprime un usuario.
-* \param DirecciÛn de memoria del array de estructuras.
+* \param Direcci√≥n de memoria del array de estructuras.
 * \param Tamapo del array a recorrer.
 * \return ID Del usuario a imprimir.
 *
@@ -410,8 +410,8 @@ void printOnePerson(struct datosPersonas *p, int tama, int id)
 }
 
 /** \brief Indica cual la cantidad de registros de baja.
-* \param DirecciÛn de memoria del arreglo de estructura.
-* \param TamaÒo del array de estructura.
+* \param Direcci√≥n de memoria del arreglo de estructura.
+* \param Tama√±o del array de estructura.
 * \return Cantidad de registros..
 *
 */
@@ -438,7 +438,7 @@ int regCantOff(struct datosPersonas *p, int tam)
 /** \brief Borra una persona de nuestra estructura indicando el ID
 * \param Array de estructura a trabajar.
 * \param Id de la persona a borrar.
-* \param TamaÒo del arreglo a trabajar.
+* \param Tama√±o del arreglo a trabajar.
 * \return
 *
 */
@@ -453,7 +453,7 @@ int suprPerson(struct datosPersonas *p,int id, int tam)
     comprobB = regCantOff(p, tam); // Cantidad de registros despues.
 
 
-    // Comprobamos si se realizÛ una baja. ( Antes - Despues =! 0)
+    // Comprobamos si se realiz√≥ una baja. ( Antes - Despues =! 0)
     if(comprobA-comprobB!=0)
     {
         // De ser asi retorno 1.
@@ -467,7 +467,7 @@ int suprPerson(struct datosPersonas *p,int id, int tam)
 /** \brief Imprime un listado de usuarios que coincidan con un estado determinado.
 * \param Array de estructuras a analizar.
 * \param Caracter del estado a encontrar - Por ejemplo: 'a'
-* \return Retorna la cantidad de registros encontrados - [-1] Si no encontrÛ coincidencias.
+* \return Retorna la cantidad de registros encontrados - [-1] Si no encontr√≥ coincidencias.
 *
 */
 
@@ -488,10 +488,10 @@ int printActiveUssersNameList(struct datosPersonas *p, char estado)
         }
 
 
-        if(cant>0) // Si se encontrÛ algun registro se retornar· la cantidad
+        if(cant>0) // Si se encontr√≥ algun registro se retornar√° la cantidad
         {
             ret = cant;
-        } else // Sino se retornar· cero.
+        } else // Sino se retornar√° cero.
             {
                 ret = cant;
             }
@@ -499,7 +499,7 @@ int printActiveUssersNameList(struct datosPersonas *p, char estado)
             return ret;
     }
 
-/** \brief Devuelve el ID de Grupo correspondiente seg˙n el rango de edad.
+/** \brief Devuelve el ID de Grupo correspondiente seg√∫n el rango de edad.
 * \param Int Edad a evaluar
 * \return Retorna un INT con el ID del grupo.
 *
@@ -574,7 +574,7 @@ void deleteUsser(struct datosPersonas *p)
                                 }
 
 
-                        if(acum==1) // Si suprPerson retorno uno, todo saliÛ bien.
+                        if(acum==1) // Si suprPerson retorno uno, todo sali√≥ bien.
                         {
                             printf("\nRegistro borrado correctamente.\n");
                         } else // Si todo esta mal puede ser por dos razones (No hay personas activas o el dato es invalido).
@@ -592,11 +592,11 @@ void deleteUsser(struct datosPersonas *p)
 
     }
 
-/** \brief Ordena alfabeticamente variables de estructura seg˙n un campo de cadena de caracteres...
+/** \brief Ordena alfabeticamente variables de estructura seg√∫n un campo de cadena de caracteres...
  *
  * \param Estructura a trabajar.
- * \param TamaÒo del array de estructuras.
- * \return Retornar·: [1] Si todo saliÛ correctamente - [0] De lo contrario.
+ * \param Tama√±o del array de estructuras.
+ * \return Retornar√°: [1] Si todo sali√≥ correctamente - [0] De lo contrario.
  *
  */
 
@@ -614,7 +614,7 @@ void deleteUsser(struct datosPersonas *p)
         for(i = 0; i < tama-1; i++) // Recorro el array
         {
 
-            for(j=i+1; j < tama; j++) // Recorro el array pero una posiciÛn mas adelante, uso estas dos posiciones para comparar la
+            for(j=i+1; j < tama; j++) // Recorro el array pero una posici√≥n mas adelante, uso estas dos posiciones para comparar la
             {                         // Anterior con la actual (i con j).
                 if(p[i].idEstado == 'a' && p[j].idEstado == 'a') // Se recorre solo si ambos campos a evaluarse son activos.
                 {
@@ -640,7 +640,7 @@ void deleteUsser(struct datosPersonas *p)
 /** \brief Genera un grafico estadistico de los Grupos en funcion de la cantidad de usuarios activos.
  *
  * \param Estructura a trabajar.
- * \param TamaÒo del array de estructuras.
+ * \param Tama√±o del array de estructuras.
  */
 
  void groupGraph(struct datosPersonas *p, int tama)
