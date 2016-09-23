@@ -1,0 +1,51 @@
+# depslib dependency file v1.0
+1474609474 source:c:\users\marcos vallejo\desktop\programación en c\trabajo práctico ii - abm\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	"funciones.h"
+
+1474610155 c:\users\marcos vallejo\desktop\programación en c\trabajo práctico ii - abm\funciones.h
+
+1474610121 source:c:\users\marcos vallejo\desktop\programación en c\trabajo práctico ii - abm\jmv_abml.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"funciones.h"
+
+1474235058 c:\users\marcos vallejo\desktop\programación en c\trabajo práctico ii - abm\jmv_abml.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<string.h>
+	"funciones.h"
+
+1474504171 source:c:\users\marcos vallejo\desktop\programación en c\trabajo práctico ii - abm\jmv_genericas.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<strings.h>
+	"funciones.h"
+
+1474588958 source:c:\users\marcos vallejo\desktop\programación en c\trabajo práctico ii - abm\jmv_ordenamiento.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"funciones.h"
+
+1474597849 source:c:\users\marcos vallejo\desktop\programación en c\trabajo práctico ii - abm\jmv_validaciones.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"funciones.h"
+
