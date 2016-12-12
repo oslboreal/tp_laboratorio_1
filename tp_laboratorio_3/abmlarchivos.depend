@@ -1,0 +1,191 @@
+# depslib dependency file v1.0
+1478012426 source:c:\users\jvallejo\code\ambl ficheros\abmlarchivos\bin.c
+
+1478024878 source:c:\users\jvallejo\code\ambl ficheros\abmlarchivos\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Emovies.h"
+
+1478020450 c:\users\jvallejo\code\ambl ficheros\abmlarchivos\emovies.h
+
+1478024910 source:c:\users\jvallejo\code\ambl ficheros\abmlarchivos\emovies.c
+	"Emovies.h"
+	<stdlib.h>
+
+1478134746 source:c:\users\marcos vallejo\desktop\abmlarchivos\bin.c
+
+1478135195 source:c:\users\marcos vallejo\desktop\abmlarchivos\emovies.c
+	"Emovies.h"
+	<string.h>
+	<stdlib.h>
+
+1478135163 c:\users\marcos vallejo\desktop\abmlarchivos\emovies.h
+
+1478135718 source:c:\users\marcos vallejo\desktop\abmlarchivos\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"defines.h"
+	"Emovies.h"
+	"abml.h"
+
+1478133618 c:\users\marcos vallejo\desktop\abmlarchivos\bin.h
+	"headers.h"
+
+1478223708 source:c:\users\marcos vallejo\desktop\abmlarchivos\jmv_validaciones.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"Validaciones.h"
+
+1478135828 c:\users\marcos vallejo\desktop\abmlarchivos\validaciones.h
+
+1478225343 c:\users\marcos vallejo\desktop\abmlarchivos\defines.h
+
+1478226575 source:c:\users\marcos vallejo\desktop\abmlarchivos\abml.c
+	"abml.h"
+	"Validaciones.h"
+	"defines.h"
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+
+1478225152 c:\users\marcos vallejo\desktop\abmlarchivos\abml.h
+	"Emovies.h"
+
+1478133599 c:\users\marcos vallejo\desktop\abmlarchivos\headers.h
+	"Emovies.h"
+	"defines.h"
+	"abml.h"
+
+1478134746 source:c:\users\marcos vallejo\desktop\abmlarchivos  y array list\bin.c
+
+1480035848 source:c:\users\marcos vallejo\desktop\abmlarchivos  y array list\emovies.c
+	"Emovies.h"
+	<string.h>
+	<stdlib.h>
+	"ArrayListJMV.h"
+	<stdio.h>
+
+1480035710 c:\users\marcos vallejo\desktop\abmlarchivos  y array list\emovies.h
+	"ArrayListJMV.h"
+
+1478223708 source:c:\users\marcos vallejo\desktop\abmlarchivos  y array list\jmv_validaciones.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"Validaciones.h"
+
+1478135828 c:\users\marcos vallejo\desktop\abmlarchivos  y array list\validaciones.h
+
+1480035911 source:c:\users\marcos vallejo\desktop\abmlarchivos  y array list\abml.c
+	"abml.h"
+	"Validaciones.h"
+	"defines.h"
+	"Emovies.h"
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+
+1480032510 c:\users\marcos vallejo\desktop\abmlarchivos  y array list\abml.h
+	"Emovies.h"
+
+1478881463 c:\users\marcos vallejo\desktop\abmlarchivos  y array list\arraylistjmv.h
+
+1478225343 c:\users\marcos vallejo\desktop\abmlarchivos  y array list\defines.h
+
+1479345880 source:c:\users\marcos vallejo\desktop\abmlarchivos  y array list\arraylistjmv.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayListJMV.h"
+
+1480035282 source:c:\users\marcos vallejo\desktop\abmlarchivos  y array list\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"defines.h"
+	"Emovies.h"
+	"abml.h"
+	<windows.h>
+
+1481515140 source:c:\users\marcos vallejo\desktop\laboratorio i\abmlarchivos  y array list\abml.c
+	"abml.h"
+	"Validaciones.h"
+	"defines.h"
+	"Emovies.h"
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+
+1480032510 c:\users\marcos vallejo\desktop\laboratorio i\abmlarchivos  y array list\abml.h
+	"Emovies.h"
+
+1481499892 c:\users\marcos vallejo\desktop\laboratorio i\abmlarchivos  y array list\emovies.h
+	"ArrayListJMV.h"
+	<stdio.h>
+
+1480565947 c:\users\marcos vallejo\desktop\laboratorio i\abmlarchivos  y array list\arraylistjmv.h
+
+1478135828 c:\users\marcos vallejo\desktop\laboratorio i\abmlarchivos  y array list\validaciones.h
+
+1478225343 c:\users\marcos vallejo\desktop\laboratorio i\abmlarchivos  y array list\defines.h
+
+1480566001 source:c:\users\marcos vallejo\desktop\laboratorio i\abmlarchivos  y array list\arraylistjmv.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayListJMV.h"
+
+1478134746 source:c:\users\marcos vallejo\desktop\laboratorio i\abmlarchivos  y array list\bin.c
+
+1481501419 source:c:\users\marcos vallejo\desktop\laboratorio i\abmlarchivos  y array list\emovies.c
+	"Emovies.h"
+	<string.h>
+	<stdlib.h>
+	"ArrayListJMV.h"
+	<stdio.h>
+
+1478223708 source:c:\users\marcos vallejo\desktop\laboratorio i\abmlarchivos  y array list\jmv_validaciones.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"Validaciones.h"
+
+1481501720 source:c:\users\marcos vallejo\desktop\laboratorio i\abmlarchivos  y array list\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"defines.h"
+	"Emovies.h"
+	"abml.h"
+	"bin_AL_JMV.h"
+	<windows.h>
+
+1480041619 source:c:\users\marcos vallejo\desktop\laboratorio i\abmlarchivos  y array list\principales.c
+
+1481498173 source:c:\users\marcos vallejo\desktop\laboratorio i\abmlarchivos  y array list\bin_al_jmv.c
+	"bin.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayListJMV.h"
+
+1478134746 c:\users\marcos vallejo\desktop\laboratorio i\abmlarchivos  y array list\bin.h
+
+1480565434 c:\users\marcos vallejo\desktop\laboratorio i\abmlarchivos  y array list\bin_al_jmv.h
+	"ArrayListJMV.h"
+	<stdlib.h>
+

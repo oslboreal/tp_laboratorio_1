@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="abmlarchivos" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/abmlarchivos" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/abmlarchivos" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="ArrayListJMV.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ArrayListJMV.h" />
+		<Unit filename="Emovies.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Emovies.h" />
+		<Unit filename="Validaciones.h" />
+		<Unit filename="abml.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="abml.h" />
+		<Unit filename="bin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bin.h" />
+		<Unit filename="bin_AL_JMV.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bin_AL_JMV.h" />
+		<Unit filename="defines.h" />
+		<Unit filename="jmv_Validaciones.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="principales.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
