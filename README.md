@@ -5,6 +5,6 @@ Trabajo práctico 1 - Estado: Entregado.
 
 Trabajo práctico 2 - Estado: Entregado.
 
-Trabajo práctico 3 - Estado: Sin entregar.
+Trabajo práctico 3 - Estado: Entregado.
 
 Trabajo práctico 4 - Estado: Entregado.
